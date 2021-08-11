@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'write',
     'trend',
     'home',
-    'machinepage',
 ]
 
 MIDDLEWARE = [
