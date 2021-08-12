@@ -1,5 +1,2 @@
-# Team_Project2
-### - 김주희 (딥러닝)
-### - 김지현 (스크래핑)
-### - 김도관 (웹서버)
-### - 복정훈 (PM, 두루두루)
+# Team_Project 2조 ForkSpoon
+## <a href="https://github.com/yoonputer/Team_Project2/tree/master/layout">팀 구성원</a> <br>
