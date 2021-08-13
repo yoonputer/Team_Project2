@@ -31,7 +31,7 @@ urllist = []
 #     'https://www.jobkorea.co.kr/starter/passassay?schTxt=%EC%84%A0%ED%83%9D%ED%95%9C&Page=1')
 
 # 잡코리아의 자소서 페이지의 주소 추출하기
-for i in range(1, 10):
+for i in range(1, 20):
     makingurl = f'https://www.jobkorea.co.kr/starter/passassay?schTxt=%EC%84%A0%ED%83%9D%ED%95%9C&Page={i}'
     데이터 = requests.get(makingurl)
 
