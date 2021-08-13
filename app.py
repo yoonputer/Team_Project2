@@ -42,4 +42,5 @@ for i in range(len(urllist)):
 a = pd.DataFrame(질문리스트, columns=['제목', '점수', '질문', '답변'])
 print(a)
 # 엑셀로 저장 하려면 터미널에서 pip install openpyxl 해주세요
-# a.to_excel("projectdata.xlsx", index=False)
+a.to_excel("projectdata.xlsx", index=False)
+
