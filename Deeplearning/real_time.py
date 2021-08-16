@@ -42,41 +42,41 @@ def non_stopwords(x_temp):
         sentance.append([item for item in encoded if item not in ko_stopwords_list])
     return sentance
 print(non_stopwords(x_temp[0]))
-
-import tensorflow as tf
-tokenizer = tf.keras.preprocessing.text.Tokenizer()
-tokenizer.fit_on_texts(non_stopwords(x_temp))
-# print(tokenizer.word_index)
-# print(tokenizer.word_counts)
-total_cnt = len(tokenizer.word_index)
-rare_cnt = 0
-total_freq,rare_freq = 0,0
-for key, value in tokenizer.word_counts.items():
-  total_freq = total_freq + value #전체 단어의 수
-  if(value <=2):
-    rare_cnt = rare_cnt+ 1
-    rare_freq = rare_freq + value #2미만인 단어(희귀단어)의 수
-print(total_cnt, rare_cnt, (rare_cnt/total_cnt)*100, (rare_freq/total_freq)*100)
-vocab_size = total_cnt - rare_cnt #보케블러리 사이즈
-# print(vocab_size)
-
-tokenizer = tf.keras.preprocessing.text.Tokenizer(vocab_size, oov_token='OOV')
-tokenizer.fit_on_texts(non_stopwords(x_temp))
-# print(tokenizer.index_word)
-
-x_train = tokenizer.texts_to_sequences(non_stopwords(x_temp))
-print(len(x_train[0]),len(x_train[40]),len(x_train[50]))
-
-hist_len = [len(words) for words in x_train]
-print(sum(hist_len)/ len(x_train))
-x_train =tf.keras.preprocessing.sequence.pad_sequences(x_train, maxlen=350)
-
-model = tf.keras.models.Sequential()
-model.add(tf.keras.layers.Embedding(input_dim= vocab_size, output_dim =30 ,input_length=350))
-model.add(tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(128)))
-model.add(tf.keras.layers.Dense(8,activation='softmax'))
-model.compile(optimizer='adam', loss = 'sparse_categorical_crossentropy', metrics=['acc'])
-
-hist = model.fit(x_train, y_train, epochs=100, batch_size=256, validation_split=0.3, shuffle=True)
-
-print(model.evaluate(x_train, y_train))
+#
+# import tensorflow as tf
+# tokenizer = tf.keras.preprocessing.text.Tokenizer()
+# tokenizer.fit_on_texts(non_stopwords(x_temp))
+# # print(tokenizer.word_index)
+# # print(tokenizer.word_counts)
+# total_cnt = len(tokenizer.word_index)
+# rare_cnt = 0
+# total_freq,rare_freq = 0,0
+# for key, value in tokenizer.word_counts.items():
+#   total_freq = total_freq + value #전체 단어의 수
+#   if(value <=2):
+#     rare_cnt = rare_cnt+ 1
+#     rare_freq = rare_freq + value #2미만인 단어(희귀단어)의 수
+# print(total_cnt, rare_cnt, (rare_cnt/total_cnt)*100, (rare_freq/total_freq)*100)
+# vocab_size = total_cnt - rare_cnt #보케블러리 사이즈
+# # print(vocab_size)
+#
+# tokenizer = tf.keras.preprocessing.text.Tokenizer(vocab_size, oov_token='OOV')
+# tokenizer.fit_on_texts(non_stopwords(x_temp))
+# # print(tokenizer.index_word)
+#
+# x_train = tokenizer.texts_to_sequences(non_stopwords(x_temp))
+# print(len(x_train[0]),len(x_train[40]),len(x_train[50]))
+#
+# hist_len = [len(words) for words in x_train]
+# print(sum(hist_len)/ len(x_train))
+# x_train =tf.keras.preprocessing.sequence.pad_sequences(x_train, maxlen=350)
+#
+# model = tf.keras.models.Sequential()
+# model.add(tf.keras.layers.Embedding(input_dim= vocab_size, output_dim =30 ,input_length=350))
+# model.add(tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(128)))
+# model.add(tf.keras.layers.Dense(8,activation='softmax'))
+# model.compile(optimizer='adam', loss = 'sparse_categorical_crossentropy', metrics=['acc'])
+#
+# hist = model.fit(x_train, y_train, epochs=100, batch_size=256, validation_split=0.3, shuffle=True)
+#
+# print(model.evaluate(x_train, y_train))
