@@ -13,14 +13,22 @@ from django.db import models
 #         return self.score
 
 class choice(models.Model):
-    score = models.DecimalField(max_digits=20,decimal_places=5)
-    group = models.TextField()
-    group = models.TextField()
-    Q1 = models.TextField()
-    A1 = models.TextField()
-    Q2 = models.TextField()
-    A2 = models.TextField()
-    Q3 = models.TextField()
-    A3 = models.TextField()
-    Q4 = models.TextField()
-    A4 = models.TextField()
+    제목 = models.TextField()
+    점수 = models.IntegerField()
+    질문 = models.TextField()
+    답변 = models.TextField()
+
+class lotto_data(models.Model):
+    a = models.DecimalField(max_digits=20,decimal_places=20)
+    b = models.DecimalField(max_digits=20,decimal_places=20)
+    c = models.DecimalField(max_digits=20,decimal_places=20)
+    d = models.DecimalField(max_digits=20,decimal_places=20)
+    e = models.DecimalField(max_digits=20,decimal_places=20)
+    f = models.DecimalField(max_digits=20,decimal_places=20)
+    g = models.DecimalField(max_digits=20,decimal_places=20)
+    h = models.DecimalField(max_digits=20,decimal_places=20)
+    i = models.DecimalField(max_digits=20,decimal_places=20)
+    j = models.DecimalField(max_digits=20,decimal_places=20)
+    k = models.DecimalField(max_digits=20,decimal_places=20)
+    l = models.DecimalField(max_digits=20,decimal_places=20)
+    m = models.DecimalField(max_digits=20,decimal_places=20)
