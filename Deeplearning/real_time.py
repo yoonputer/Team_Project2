@@ -30,7 +30,8 @@ ko_stopwords_list = np.array(stopwords['words'].tolist())
 # ['이' '있' '하' ... '잘' '통하' '놓']
 
 from konlpy.tag import Mecab
-mecab= Mecab()
+mecab = Mecab(dicpath=r"C:\mecab\mecab-ko-dic")
+
 # mecab.pos(x_temp[0])
 # mecab.morphs(x_temp[0])
 
@@ -40,7 +41,7 @@ def non_stopwords(x_temp):
         encoded = mecab.morphs(tok)
         sentance.append([item for item in encoded if item not in ko_stopwords_list])
     return sentance
-# print(non_stopwords(x_temp))
+print(non_stopwords(x_temp[0]))
 
 import tensorflow as tf
 tokenizer = tf.keras.preprocessing.text.Tokenizer()
