@@ -21,7 +21,7 @@ class Spredict:
             self.tokenizer = pickle.load(f)
 
     def sentance_predict(self, sentence):
-        mecab = Mecab(dicpath=r"C:\mecab\mecab-ko-dic")
+        mecab = Mecab(dicpath=r"C:\mecab\mecab-ko-dic") #구름 서버로 옮길땐 경로 재지정해야됨
         input_sentance = mecab.morphs(sentence)
         input_sentance = [
             tok for tok in input_sentance if tok not in self.ko_stopwords_list]
