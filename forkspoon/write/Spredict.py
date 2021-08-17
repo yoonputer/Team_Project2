@@ -1,6 +1,7 @@
 # to_web.py
 # -*- coding: utf-8 -*-
-from konlpy.tag import Mecab
+from eunjeon import Mecab
+# from konlpy.tag import Mecab
 import tensorflow as tf
 import sqlite3
 import pandas as pd
@@ -21,7 +22,7 @@ class Spredict:
             self.tokenizer = pickle.load(f)
 
     def sentance_predict(self, sentence):
-        mecab = Mecab(dicpath=r"C:\mecab\mecab-ko-dic") #구름 서버로 옮길땐 경로 재지정해야됨
+        mecab = Mecab()
         input_sentance = mecab.morphs(sentence)
         input_sentance = [
             tok for tok in input_sentance if tok not in self.ko_stopwords_list]

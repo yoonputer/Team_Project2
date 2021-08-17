@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: eunjeon
+Version: 0.4.0
+Summary: Python interface for eunjeon project & mecab based morphological analyzer.
+Home-page: https://github.com/koshort/pyeunjeon
+Author: nyanye
+Author-email: iam@nyanye.com
+License: GPL v3+
+Keywords: Korean,CJK,NLP,natural language processing,CL,computational linguistics,tagging,tokenizing,linguistics,text analytics
+Platform: Windows
+Platform: Linux
+Platform: Mac
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+
+UNKNOWN
+
+
