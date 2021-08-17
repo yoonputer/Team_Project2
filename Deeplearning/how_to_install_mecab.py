@@ -20,6 +20,7 @@ def install_whl(path):
 install_whl('C:/mecab/mecab_python-0.996_ko_0.9.2_msvc-cp36-cp36m-win_amd64.whl')
 
 
-
+# django에서 mecab쓸 때
+# mecab = Mecab(dicpath=r"C:\mecab\mecab-ko-dic")
 
 
