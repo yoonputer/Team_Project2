@@ -5,3 +5,5 @@ from django.shortcuts import render
 
 def trendview(request):
     return render(request, 'trend/trend.html')
+
+
