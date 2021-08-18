@@ -1,7 +1,7 @@
 # to_web.py
 # -*- coding: utf-8 -*-
-from eunjeon import Mecab
-# from konlpy.tag import Mecab
+#from eunjeon import Mecab
+from konlpy.tag import Mecab
 import tensorflow as tf
 import sqlite3
 import pandas as pd
