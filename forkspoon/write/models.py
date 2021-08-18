@@ -33,7 +33,3 @@ class lotto_data(models.Model):
     l = models.DecimalField(max_digits=20,decimal_places=20)
     m = models.DecimalField(max_digits=20,decimal_places=20)
 
-class alldata(models.Model):
-    제목 = models.TextField()
-    점수 = models.DecimalField(max_digits=10,decimal_places=5)
-    답변 = models.TextField()
