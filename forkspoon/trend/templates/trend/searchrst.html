@@ -39,7 +39,22 @@
         aria-label="Example text with button addon" aria-describedby="button-addon1">
     </div>
   </form>
-  <h2>결과값 없음</h2>
+
+  <!-- 템플릿 반복문 -->
+  <!-- {% load trendfilter %} -->
+  {% for a in file %}
+  {% load trendfilter %}
+
+  <div class="card mb-3">
+    <div class="card-body">
+      <!--제목-->
+      <p class="card-text">{{ a|ranges }}</p>
+      <!--긴내용-->
+      <p class="card-text"><small class="text-muted">{{ a|rangess }}</small></p>
+    </div>
+  </div>
+  {% endfor %}
+  <!-- 반복문 끝 -->
 
   <!-- Optional JavaScript; choose one of the two! -->
 
