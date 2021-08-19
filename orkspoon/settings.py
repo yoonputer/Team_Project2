@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'forkspoon.urls'
+ROOT_URLCONF = 'orkspoon.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'forkspoon.wsgi.application'
+WSGI_APPLICATION = 'orkspoon.wsgi.application'
 
 
 # Database
