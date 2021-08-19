@@ -48,6 +48,24 @@
         </div>
       </div>
     </div>
+       <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
+                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                로스율과 정확도 그래프
+              </button>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              <img src={% static 'write/loss.jpg' %}>
+              <br>
+              <img src={% static 'write/acc.jpg' %}>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="card">
       <div class="card-header" id="headingTwo">
         <h2 class="mb-0">
@@ -62,25 +80,7 @@
 
           <img src={% static myemail %}>
         </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h2 class="mb-0">
-              <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse"
-                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                로스율이나 어큐런시 나옴
-              </button>
-            </h2>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-            <div class="card-body">
-              로스율과 정확도 그래프
-              <img src={% static 'write/loss.jpg' %}>
-              <br>
-              <img src={% static 'write/acc.jpg' %}>
-            </div>
-          </div>
-        </div>
-      </div>
+     
 
       <!-- Optional JavaScript; choose one of the two! -->
 

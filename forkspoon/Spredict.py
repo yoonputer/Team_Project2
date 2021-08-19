@@ -1,7 +1,6 @@
 # to_web.py
 # -*- coding: utf-8 -*-
 import platform
-from eunjeon import Mecab
 from konlpy.tag import Hannanum
 import tensorflow as tf
 import sqlite3
@@ -29,6 +28,7 @@ class Spredict:
 
     def sentance_predict(self, sentence):
         if 'Windows' in platform.platform():
+            from eunjeon import Mecab
             mecab = Mecab()
         else:
             mecab = Hannanum()
