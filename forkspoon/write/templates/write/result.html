@@ -10,8 +10,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
-  <title>Write Page</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+  <title>Write Page result</title>
 </head>
 
 <body>
@@ -30,16 +31,21 @@
     </div>
   </nav>
 
-  <div class="accordion" id="accordionExample" style="margin-top: 30px;">
-    <div class="card">
-      <div class="card-header" id="headingOne">
-        <h2 class="mb-0">
-          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
-            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            점수
-          </button>
-        </h2>
-      </div>
+   <div class="w3-panel w3-padding w3-highway-blue">
+    <h1>Main service page</h1>
+    </div>
+  <!--점수-->
+  <div class="w3-panel w3-padding-16 w3-indigo">
+    <div class="accordion" id="accordionExample" style="margin-top: 30px;">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              점수
+            </button>
+          </h2>
+        </div>
 
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
         <div class="card-body">
@@ -48,6 +54,8 @@
         </div>
       </div>
     </div>
+
+    <!--로스율-->
        <div class="card">
           <div class="card-header" id="headingThree">
             <h2 class="mb-0">
@@ -57,6 +65,7 @@
               </button>
             </h2>
           </div>
+
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
               <img src={% static 'write/loss.jpg' %}>
@@ -66,6 +75,8 @@
           </div>
         </div>
       </div>
+
+    <!--워드클라우드-->
     <div class="card">
       <div class="card-header" id="headingTwo">
         <h2 class="mb-0">
@@ -80,7 +91,7 @@
 
           <img src={% static myemail %}>
         </div>
-     
+     </div>
 
       <!-- Optional JavaScript; choose one of the two! -->
 

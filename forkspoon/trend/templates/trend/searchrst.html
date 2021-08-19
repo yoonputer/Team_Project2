@@ -10,7 +10,10 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-vivid.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
   <title>Trend Page</title>
 </head>
 
@@ -23,34 +26,42 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="/trend">Trends</a>
-        <a class="nav-link" href="/write">Writing</a>
-        <a class="nav-link active" href="/member">Member <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/write">Main service</a>
+        <a class="nav-link" href="/trend">Trend News</a>
+        <a class="nav-link active" href="/member">Members <span class="sr-only">(current)</span></a>
       </div>
     </div>
   </nav>
 
-  <form method="post"> {% csrf_token %}
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <button class="btn btn-outline-secondary" type="submit" id="button-addon1">Search</button>
+  <div class="w3-panel w3-padding-16 w3-vivid-purple">
+    <h1 class="w3-vivid-purple" style="text-shadow:2px 2px 0 #444">
+    <b>Articles</b></h1>
+  </div>
+
+  <!--search부분-->
+  <div class="w3-panel w3-padding-16 w3-vivid-blue">
+    <form method="post"> {% csrf_token %}
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="w3-tag w3-xlarge w3-signal-red" type="submit" id="button-addon1">Search</button>
+        </div>
+        <input name="searchword" type="text" class="w3-input w3-hover-light-grey" placeholder=""
+          aria-label="Example text with button addon" aria-describedby="button-addon1">
       </div>
-      <input name="searchword" type="text" class="form-control" placeholder=""
-        aria-label="Example text with button addon" aria-describedby="button-addon1">
+    </form>
     </div>
-  </form>
 
   <!-- 템플릿 반복문 -->
   <!-- {% load trendfilter %} -->
   {% for a in file %}
   {% load trendfilter %}
 
-  <div class="card mb-3">
+  <div class="w3-panel w3-padding-16 w3-signal-violet">
     <div class="card-body">
       <!--제목-->
-      <p class="card-text">{{ a|ranges }}</p>
+      <h2 class="card-text">{{ a|ranges }}</h2>
       <!--긴내용-->
-      <p class="card-text"><small class="text-muted">{{ a|rangess }}</small></p>
+      <h4 class="card-text w3-white"><small class="text-muted">{{ a|rangess }}</small></h4>
     </div>
   </div>
   {% endfor %}
