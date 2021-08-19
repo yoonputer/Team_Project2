@@ -10,7 +10,8 @@
 <br>
 
 > ## 📢 Source
-#### - <a href="https://www.jobkorea.co.kr/starter/PassAssay?FavorCo_Stat=0&Pass_An_Stat=0&schTxt=%EC%84%A0%ED%83%9D%ED%95%9C&OrderBy=0&EduType=0&WorkType=0&isSaved=0&Page=2t">잡코리아</a> <br>
+#### - <a href="https://www.jobkorea.co.kr/starter/passassay/">잡코리아</a> <br>
+#### - <a href="http://www.recruittimes.co.kr/">리크루트 타임스</a><br>
 
 <br>
    
