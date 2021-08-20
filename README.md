@@ -1,4 +1,9 @@
 # 🔱Team_Project_2조_ForkSpoon🥄
+
+
+![화면 캡처 2021-08-20 135754](https://user-images.githubusercontent.com/83646543/130182107-9718746b-e475-4b01-88f7-8c4b86251137.jpg)
+
+
 ### <a href="https://github.com/yoonputer/Team_Project2/tree/master/layout">👥 팀 구성원 및 역할</a> <br>
 <br> 
  ➺<a href="https://github.com/yoonputer/Team_Project2/blob/master/scraping/READEME.md">  김지현 </a>(Scrapping)(@ <a href="https://github.com/fonslucens"> fonslucens </a>) <br>
@@ -7,6 +12,9 @@
  ➺<a href="https://github.com/yoonputer/Team_Project2">  복정훈 </a>(PM, 두루두루)(@ <a href="https://github.com/yoonputer"> yoonputer </a> ) <br>
  <br>
  <br>
+ 
+ [![SC2 Video](https://img.youtube.com/vi/HnEHZtPT5RA/0.jpg)](https://www.youtube.com/watch?v=HnEHZtPT5RA)
+
 
 
 > ## 💡 Project topic
