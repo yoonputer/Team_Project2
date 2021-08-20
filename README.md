@@ -13,7 +13,7 @@
  <br>
  <br>
  
- 프로젝트 동영상
+> ## 🥄 프로젝트 동영상
  
  [![SC2 Video](https://img.youtube.com/vi/HnEHZtPT5RA/0.jpg)](https://www.youtube.com/watch?v=HnEHZtPT5RA)
 <br>
