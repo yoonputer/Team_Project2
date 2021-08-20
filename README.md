@@ -13,10 +13,11 @@
  <br>
  <br>
  
+ 프로젝트 동영상
+ 
  [![SC2 Video](https://img.youtube.com/vi/HnEHZtPT5RA/0.jpg)](https://www.youtube.com/watch?v=HnEHZtPT5RA)
-
-
-
+<br>
+<br>
 > ## 💡 Project topic
 **잡코리아의 합격한 자기소개서 데이터를 자연어처리 / 딥러닝을 통해 분석하고 학습시켜**
 
