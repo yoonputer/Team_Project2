@@ -12,9 +12,10 @@ data_df= pd.DataFrame(data_pkl)
 print(data_df)
 '''
 
-''' 디비 -> 데이터프레임 불러오기
+''' 디비 -> 데이터프레임 저장 및 불러오기
 connect = sqlite3.connect('../../forkspoon/db.sqlite3')
 data_df.to_sql('groups',connect, if_exists='replace')
+
 df = pd.read_sql_query('select * from groups',connect)
 print(df)
 '''
