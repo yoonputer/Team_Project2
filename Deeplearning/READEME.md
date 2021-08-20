@@ -1,3 +1,4 @@
 #### ➺<a href="https://github.com/yoonputer/Team_Project2">  home </a>
 
-# Deeplearning by 김주희
+# <a href="https://github.com/yoonputer/Team_Project2/tree/master/Deeplearning">  Deeplearning </a>  by 김주희
+
