@@ -27,11 +27,7 @@ class Spredict:
             self.tokenizer = pickle.load(f)
 
     def sentance_predict(self, sentence):
-        if 'Windows' in platform.platform():
-            from eunjeon import Mecab
-            mecab = Mecab()
-        else:
-            mecab = Hannanum()
+        mecab = Hannanum()
         input_sentance = mecab.morphs(sentence)
         input_sentance = [
             tok for tok in input_sentance if tok not in self.ko_stopwords_list]
