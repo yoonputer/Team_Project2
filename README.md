@@ -9,7 +9,7 @@
  ➺<a href="https://github.com/yoonputer/Team_Project2/tree/master/scraping">  김지현 </a>(Scrapping)(@ <a href="https://github.com/fonslucens"> fonslucens </a>) <br>
  ➺<a href="https://github.com/yoonputer/Team_Project2/tree/master/write">  김도관 </a>(Web server)(@ <a href="https://github.com/power3247">  power3247 </a>) <br>
  ➺<a href="https://github.com/yoonputer/Team_Project2/tree/master/Deeplearning">  김주희 </a>(Deep learning)(@ <a href="https://github.com/ginttone">  ginttone </a> ) <br>
- ➺<a href="https://github.com/yoonputer/Team_Project2">  복정훈 </a>( 두루두루)(@ <a href="https://github.com/yoonputer"> yoonputer </a> ) <br>
+ ➺<a href="https://github.com/yoonputer/Team_Project2">  복정훈 </a>(PM)(@ <a href="https://github.com/yoonputer"> yoonputer </a> ) <br>
  <br>
  <br>
  
